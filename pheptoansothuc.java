@@ -24,10 +24,11 @@ public class pheptoansothuc {
         System.out.println("Phep tinh "+ a +"-" + b +" = " + c);
          c = a * b;
         System.out.println("Phep tinh "+ a +"*" + b +" = " + c);
-         c = a / b;
-        System.out.println("Phep tinh "+ a +"/" + b +" = " + c);
-         c = a % b;
-        System.out.println("Phep tinh "+ a +"%" + b +" = " + c);
-
+        if(b!=0){ 
+            c = a / b;
+            System.out.println("Phep tinh "+ a +"/" + b +" = " + c);
+             c = a % b;
+            System.out.println("Phep tinh "+ a +"%" + b +" = " + c);
+        }
     }
 }
