@@ -9,11 +9,10 @@ import java.util.Scanner;
  */
 public class pheptoan {
     public static void main(String[] args){
-        
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap a: ");       
         int a = sc.nextInt();
-        System.out.print("Nhap a: ");
+        System.out.print("Nhap b: ");
         int b = sc.nextInt();
         int c = a + b;
         System.out.println("Phep tinh "+ a +"+" + b +" = " + c);
@@ -21,14 +20,18 @@ public class pheptoan {
         System.out.println("Phep tinh "+ a +"-" + b +" = " + c);
          c = a * b;
         System.out.println("Phep tinh "+ a +"*" + b +" = " + c);
-         c = a / b;
-        System.out.println("Phep tinh "+ a +"/" + b +" = " + c);
-         c = a % b;
-        System.out.println("Phep tinh "+ a +"%" + b +" = " + c);
-         long d =1;
-        for (int i = 1; i<= b;i++){
+         if (b != 0){
+            c = a / b;
+            System.out.println("Phep tinh "+ a +"/" + b +" = " + c);
+            c = a % b;
+            System.out.println("Phep tinh "+ a +"%" + b +" = " + c);
+            long d =1;
+            for (int i = 1; i<= b;i++){
             d *= a;
-        }
-        System.out.println("Phep tinh "+ a +"^" + b +" = " + d);
+            }
+            System.out.println("Phep tinh "+ a +"^" + b +" = " + d);
+        }else{
+             System.out.println("Phep tinh "+ a +"^" + b +" = 1");
+         }
     }
 }
