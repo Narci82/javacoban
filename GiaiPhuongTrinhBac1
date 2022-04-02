@@ -5,7 +5,7 @@ import java.util.Scanner;
  *
  * @author 7480
  */
-public class phuongtrinhbac1 {
+public class GiaiPhuongTrinhBac1 {
    public static void main(String[] args) {
         int aNumber, bNumber;
         double nghiem;
